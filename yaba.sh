@@ -10,7 +10,7 @@ function help
 }
 
 params=($@)
-paramCount=${#params[@]}
+paramCount=$#
 
 if [ $paramCount -lt 1 ]; then echo "yaba: invalid param count"; help; exit 1; fi
 
