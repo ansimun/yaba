@@ -90,7 +90,7 @@ elif [ $action = "backup" ]; then
     locallinkdir=`ls -tp1 $backupsetdir | grep -E ".*/$" | cut -d "/" -f 1 | head -1`
     linkdir="$backupsetdir/$locallinkdir"
 
-    syncdir="$backupsetdir/`date +%Y-%m-%d`(`date +%H:%M:%S`)"
+    syncdir="$backupsetdir/`date +%Y-%m-%d\(%H:%M:%S\)`"
     if [ -d $syncdir ]; then echo "yaba: backup already exists"; exit 1;
     else mkdir -p $syncdir
     fi
