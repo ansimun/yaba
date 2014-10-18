@@ -1,6 +1,4 @@
 yaba
 ====
 
-Yet Another Backup Script (Bash)
-
-
+Yet Another Backup Script - Rsync based backup script supporting backup profiles.
